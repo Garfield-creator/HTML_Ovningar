@@ -4,6 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fantasy Movie - Filmbolag FS</title>
+        <style>
+            body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: cornflowerblue;
+            color: black;
+            text-align: center;
+            }
+            header {
+            background-color: orange;
+            padding: 20px;
+            }
+            footer {
+            background-color: whitesmoke;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            }
+</style>
     </head>
     <body>
         <header>
