@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaffeföretaget – Produkter</title>
+    <link rel="stylesheet" href="Uppgift 8 Style.css">
+
+    <style>
+        .product-layout {
+            display: flex;
+            gap: 30px;
+        }
+        .machines {
+            flex: 2;
+        }
+        .machines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .machine-card {
+            background: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        .machine-card img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .machine-model {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .machine-price {
+            color: #5c3d2e;
+            font-weight: bold;
+            margin: 6px 0;
+        }
+        .kaffeparty {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kaffeföretaget</h1>
+    </header>
+
+    <nav>
+        <a href="Uppgift 8 Index.html">Hem</a>
+        <a href="Uppgift 8 Produkter.html">Produkter</a>
+        <a href="Uppgift 8 Om-oss.html">Om Oss</a>
+    </nav>
+
+    <main>
+
+        <div class="product-layout">
+            <section class="machines">
+                <h2>Kaffemaskiner</h2>
+                <p>Här hittar du våra populäraste kaffemaskiner för både stora och små företag.</p>
+
+                <div class="machines-grid">
+                    <div class="machine-card">
+                        <img src="https://picsum.photos/id/431/200/150" alt="Kaffemaskin">
+                        <div class="machine-model">OfficePro 3000</div>
+                        <div class="machine-price">Pris: 6 995 kr</div>
+                        <p>En robust maskin för kontor med hög kapacitet och enkel skötsel.</p>
+                    </div>
+                    <div class="machine-card">
+                        <img src="https://picsum.photos/id/431/200/150" alt="Kaffemaskin">
+                        <div class="machine-model">BeanMaster Deluxe</div>
+                        <div class="machine-price">Pris: 8 499 kr</div>
+                        <p>Lyxig bön-till-kopp maskin med silkeslent kaffe och flera inställningar.</p>
+                    </div>
+                    <div class="machine-card">
+                        <img src="https://picsum.photos/id/431/200/150" alt="Kaffemaskin">
+                        <div class="machine-model">MiniBrew Express</div>
+                        <div class="machine-price">Pris: 4 299 kr</div>
+                        <p>Kompakt maskin för mindre företag och arbetsgrupper.</p>
+                    </div>
+                    <div class="machine-card">
+                        <img src="https://picsum.photos/id/431/200/150" alt="Kaffemaskin">
+                        <div class="machine-model">CaféSmart One</div>
+                        <div class="machine-price">Pris: 5 499 kr</div>
+                        <p>Smart maskin med automatisk rengöring och flera kaffetyper.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- KAFFEPARTY -->
+            <section class="kaffeparty">
+                <h2>Kaffeparty</h2>
+                <p>Vårt populära kaffe-event – perfekt för både företag och privatpersoner!</p>
+                <h3>För företag</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>För privatpersoner</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kaffeföretaget – Webmaster: Mikael Nordman</p>
+    </footer>
+
+</body>
+</html>
