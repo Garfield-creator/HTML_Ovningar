@@ -17,8 +17,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 20px;
-            
-                justify-items: center;      /* center the cards */
+            justify-items: center;      /* center the cards */
         }
         .machine-card {
             background: white;
@@ -43,12 +42,21 @@
             margin: 6px 0;
         }
         .kaffeparty {
+            min-width: 300px;
             flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .kaffeparty-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        }
+        .kaffeparty-card {
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 6px rgba(0,0,0,0.15);
-            min-width: 300px;
         }
         @media(max-width: 780px) {
             .product-layout {
@@ -104,17 +112,22 @@
             <section class="kaffeparty">
                 <h2>Kaffeparty</h2>
                 <p>Vårt populära kaffe-event – perfekt för både företag och privatpersoner!</p>
-                <h3>För företag</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h3>För privatpersoner</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
-
+                <div class=kaffeparty-cards>
+                    <section class="kaffeparty-card">
+                    <h3>För företag</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </section>
+                    <section class="kaffeparty-card">
+                    <h3>För privatpersoner</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
+                    </section>
+                </div>
         </div>
     </main>
     <footer>
