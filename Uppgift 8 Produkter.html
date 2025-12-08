@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Kaffeföretaget – Produkter</title>
-    <link rel="stylesheet" href="Uppgift 8 Style.css">
-
+    <link rel="stylesheet" href="Uppgift-8-Style.css">
     <style>
         .product-layout {
             display: flex;
@@ -46,23 +45,24 @@
             border-radius: 8px;
             box-shadow: 0 0 6px rgba(0,0,0,0.15);
         }
+        @media(max-width: 900px) {
+            .product-layout {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 
 <body>
-
     <header>
         <h1>Kaffeföretaget</h1>
     </header>
-
     <nav>
-        <a href="Uppgift 8 Index.html">Hem</a>
-        <a href="Uppgift 8 Produkter.html">Produkter</a>
-        <a href="Uppgift 8 Om-oss.html">Om Oss</a>
+        <a href="Uppgift-8-Index.html">Hem</a>
+        <a href="Uppgift-8-Produkter.html">Produkter</a>
+        <a href="Uppgift-8-Om-oss.html">Om Oss</a>
     </nav>
-
     <main>
-
         <div class="product-layout">
             <section class="machines">
                 <h2>Kaffemaskiner</h2>
@@ -96,8 +96,6 @@
 
                 </div>
             </section>
-
-            <!-- KAFFEPARTY -->
             <section class="kaffeparty">
                 <h2>Kaffeparty</h2>
                 <p>Vårt populära kaffe-event – perfekt för både företag och privatpersoner!</p>
@@ -113,12 +111,9 @@
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
 
         </div>
-
     </main>
-
     <footer>
         <p>&copy; 2025 Kaffeföretaget – Webmaster: Mikael Nordman</p>
     </footer>
-
 </body>
 </html>
